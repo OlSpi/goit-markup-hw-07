@@ -1,0 +1,31 @@
+.footer-contacts {
+  font-style: normal;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contacts__item {
+  color: rgba(255, 255, 255, 0.6);
+
+  margin-bottom: 9px;
+
+  &:nth-child(1) {
+    color: $background-color;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-contacts__link {
+  color: currentColor;
+
+  line-height: 1.71;
+
+  &:hover,
+  &:focus {
+    color: $link-color;
+  }
+}
