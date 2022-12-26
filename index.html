@@ -1,21 +1,19 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      title {
-        font-family: "Raleway", sans-serif;
-        font-family: "Roboto", sans-serif;
-      }
-    </style>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!--HEADER-->
@@ -56,29 +54,26 @@
         </div>
       </div>
     </header>
-
     <main>
       <!--HERO-->
       <section class="hero section">
         <div class="hero-container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero__button" type="button"  data-modal-open>
+          <button class="hero__button" type="button" data-modal-open>
             Замовити послугу
           </button>
         </div>
       </section>
-
       <!--OUR ASPECTS-->
-      <section class="section aspects">
+      <section class="aspects section">
         <div class="container">
           <ul class="aspects-list flex-container">
             <li class="aspects-list__item">
-              <div class="aspects-icon-container">
+              <div class="aspects-icon-box">
                 <svg class="aspects-list__icon" width="70" height="70">
                   <use href="./images\icons.svg#icon-antenna-1"></use>
                 </svg>
               </div>
-
               <h3 class="aspects-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="aspects-list__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
@@ -86,7 +81,7 @@
               </p>
             </li>
             <li class="aspects-list__item">
-              <div class="aspects-icon-container">
+              <div class="aspects-icon-box">
                 <svg class="aspects-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock-1"></use>
                 </svg>
@@ -98,7 +93,7 @@
               </p>
             </li>
             <li class="aspects-list__item">
-              <div class="aspects-icon-container">
+              <div class="aspects-icon-box">
                 <svg class="aspects-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram-1"></use>
                 </svg>
@@ -109,7 +104,7 @@
               </p>
             </li>
             <li class="aspects-list__item">
-              <div class="aspects-icon-container">
+              <div class="aspects-icon-box">
                 <svg class="aspects-list__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut-1"></use>
                 </svg>
@@ -162,7 +157,7 @@
         </div>
       </section>
       <!--OUR EMPLOYEES-->
-      <section class="section employees">
+      <section class="employees section">
         <div class="container">
           <h2 class="title-second">Наша команда</h2>
           <ul class="employees-list flex-container">
@@ -175,8 +170,8 @@
                 height="260"
               />
               <div class="employees-discription">
-                <h3 class="title-third">Ігор Дем'яненко</h3>
-                <p class="employees-discription-text" lang="en">
+                <h3 class="employees-discription__title">Ігор Дем'яненко</h3>
+                <p class="employees-discription__text" lang="en">
                   Product Designer
                 </p>
                 <ul class="employees-socials">
@@ -236,8 +231,8 @@
                 height="260"
               />
               <div class="employees-discription">
-                <h3 class="title-third">Ольга Рєпіна</h3>
-                <p class="employees-discription-text" lang="en">
+                <h3 class="employees-discription__title">Ольга Рєпіна</h3>
+                <p class="employees-discription__text" lang="en">
                   Frontend Developer
                 </p>
                 <ul class="employees-socials">
@@ -297,8 +292,8 @@
                 height="260"
               />
               <div class="employees-discription">
-                <h3 class="title-third">Микола Тарасов</h3>
-                <p class="employees-discription-text" lang="en">Marketing</p>
+                <h3 class="employees-discription__title">Микола Тарасов</h3>
+                <p class="employees-discription__text" lang="en">Marketing</p>
 
                 <ul class="employees-socials">
                   <li class="employees-socials__item">
@@ -357,8 +352,8 @@
                 height="260"
               />
               <div class="employees-discription">
-                <h3 class="title-third">Михайло Єрмаков</h3>
-                <p class="employees-discription-text" lang="en">UI Designer</p>
+                <h3 class="employees-discription__title">Михайло Єрмаков</h3>
+                <p class="employees-discription__text" lang="en">UI Designer</p>
                 <ul class="employees-socials">
                   <li class="employees-socials__item">
                     <a class="employees-socials__link" href="">
@@ -411,7 +406,7 @@
         </div>
       </section>
       <!--OUR CLIENTS-->
-      <section class="section clients">
+      <section class="clients section">
         <div class="container">
           <h2 class="title-second">Постійні клієнти</h2>
           <ul class="clients-list flex-container">
@@ -422,7 +417,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
@@ -430,7 +424,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
@@ -438,7 +431,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
@@ -446,7 +438,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
@@ -454,7 +445,6 @@
                 </svg>
               </a>
             </li>
-
             <li class="clients-list__item">
               <a class="clients-list__link" href="">
                 <svg class="clients-list__icon" width="106" height="60">
@@ -473,24 +463,30 @@
           <a href="index.html" class="logo footer__logo"
             >Web<span class="footer__logo-color">Studio</span></a
           >
-          <address class="footer-contacts">
-            <span class="footer-contacts__address">
-              м. Київ, пр-т Лесі Українки, 26</span
-            >
-            <a class="footer-contacts__mail-tel" href="info@devstudio.com"
-              >info@devstudio.com</a
-            >
-            <a
-              class="footer-contacts__mail-tel footer-contacts__mail-tel-reset-margin"
-              href="tel:+380961111111"
-              >+38 096 111 11 11</a
-            >
+          <address>
+            <ul class="footer-contacts">
+              <li class="footer-contacts__item">
+                <a
+                  class="footer-contacts__link"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-contacts__item">
+                <a class="footer-contacts__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
           </address>
         </div>
-
         <div class="footer-socials">
-          <p class="footer-socials__text">приєднуйтесь</p>
-
+          <p class="footer-socials__lable">приєднуйтесь</p>
           <ul class="footer-socials-list">
             <li class="footer-socials-list__item">
               <a class="footer-socials-list__link" href="">
@@ -523,7 +519,6 @@
             </li>
           </ul>
         </div>
-
         <form class="footer-form">
           <div>
             <label class="footer-form__lable" for="footer-email"
@@ -537,11 +532,13 @@
               placeholder="E-mail"
             />
           </div>
-          <div class="footer-submit-box">
-            <button class="footer-submit" type="submit">Підписатися</button>
-            <svg class="footer-submit__icon" width="24" height="24">
-              <use href="images/icons.svg#icon-icon-send"></use>
-            </svg>
+          <div>
+            <button class="footer-submit" type="submit">
+              Підписатися
+              <svg class="footer-submit__icon" width="24" height="24">
+                <use href="images/icons.svg#icon-icon-send"></use>
+              </svg>
+            </button>
           </div>
         </form>
       </div>
@@ -549,7 +546,7 @@
     <!-- .....................MODAL............... -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p class="modal-form__title">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <!-- MODAL FORM  -->
         <form class="modal-form">
           <div class="modal-form__item">
@@ -593,6 +590,7 @@
               placeholder="Введіть текст"
             ></textarea>
           </div>
+
           <div class="modal-form__item">
             <input
               class="modal-form__checbox"
@@ -605,6 +603,7 @@
               <a class="modal-form__checbox-link" href="">Умови договору</a>
             </label>
           </div>
+
           <div class="modal-form__item">
             <button class="modal-form__submit" type="submit">Відправити</button>
           </div>
