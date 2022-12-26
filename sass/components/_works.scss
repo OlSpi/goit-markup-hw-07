@@ -1,0 +1,22 @@
+
+.works-list__item {
+  position: relative;
+}
+.works-list__img {
+  display: block;
+}
+.works-list__lable {
+  position: absolute;
+
+
+  background: rgba(47, 48, 58, 0.8);
+
+@extend %lable;
+
+  width: 100%;
+  height: 70px;
+
+  bottom: 0;
+
+  @extend %centrFlex;
+}
